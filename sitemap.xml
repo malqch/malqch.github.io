@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/photos/videos.html</loc>
+    
+    <lastmod>2019-09-16T09:09:23.191Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/09/08/long-distance-relationship/</loc>
     
     <lastmod>2019-09-16T08:19:48.614Z</lastmod>
