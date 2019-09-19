@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/09/03/my_blog/</loc>
+    
+    <lastmod>2019-09-19T07:02:30.249Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/09/19/mysql-exceptions-OperationalError/</loc>
     
     <lastmod>2019-09-19T06:59:01.060Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://yoursite.com/photos/data.json</loc>
     
     <lastmod>2019-09-12T06:21:41.446Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/22/my_blog/</loc>
-    
-    <lastmod>2019-09-09T05:36:08.359Z</lastmod>
     
   </url>
   

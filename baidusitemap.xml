@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2019/09/03/my_blog/</loc>
+    <lastmod>2019-09-19</lastmod>
+  </url>  <url>
     <loc>http://yoursite.com/2019/09/19/mysql-exceptions-OperationalError/</loc>
     <lastmod>2019-09-19</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2019/09/08/long-distance-relationship/</loc>
     <lastmod>2019-09-17</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2016/07/22/my_blog/</loc>
-    <lastmod>2019-09-09</lastmod>
   </url>
 </urlset>
