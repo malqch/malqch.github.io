@@ -10,19 +10,19 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="最近在运行python项目是发现报如下错误:  经查询发现报错的原因是使用的mysql8.0 以前用的是：tx_isolation 现在用是： transaction_isolation 可通过以下办法解决: (1)升级 sqlalchemy 可以解决此问题  pip install -i https://pypi.tuna.tsinghua.edu.cn/simple –upgrade sqla">
+  <meta name="description" content="最近在运行python项目是发现报如下错误:">
 <meta name="keywords" content="mysql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解决(_mysql_exceptions.OperationalError) (1193, &quot;Unknown system variable &#39;tx_isolation&#39;&quot;)">
 <meta property="og:url" content="http://yoursite.com/2019/09/19/mysql-exceptions-OperationalError/index.html">
 <meta property="og:site_name" content="小不酒馆">
-<meta property="og:description" content="最近在运行python项目是发现报如下错误:  经查询发现报错的原因是使用的mysql8.0 以前用的是：tx_isolation 现在用是： transaction_isolation 可通过以下办法解决: (1)升级 sqlalchemy 可以解决此问题  pip install -i https://pypi.tuna.tsinghua.edu.cn/simple –upgrade sqla">
+<meta property="og:description" content="最近在运行python项目是发现报如下错误:">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/09/19/mysql-exceptions-OperationalError/mysql_exceptions.png">
-<meta property="og:updated_time" content="2019-09-19T06:53:21.096Z">
+<meta property="og:updated_time" content="2019-09-19T06:59:01.060Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决(_mysql_exceptions.OperationalError) (1193, &quot;Unknown system variable &#39;tx_isolation&#39;&quot;)">
-<meta name="twitter:description" content="最近在运行python项目是发现报如下错误:  经查询发现报错的原因是使用的mysql8.0 以前用的是：tx_isolation 现在用是： transaction_isolation 可通过以下办法解决: (1)升级 sqlalchemy 可以解决此问题  pip install -i https://pypi.tuna.tsinghua.edu.cn/simple –upgrade sqla">
+<meta name="twitter:description" content="最近在运行python项目是发现报如下错误:">
 <meta name="twitter:image" content="http://yoursite.com/2019/09/19/mysql-exceptions-OperationalError/mysql_exceptions.png">
   
     <link rel="alternative" href="/atom.xml" title="小不酒馆" type="application/atom+xml">
@@ -275,6 +275,7 @@
     
     <p>最近在运行python项目是发现报如下错误:</p>
 <p><img src="/2019/09/19/mysql-exceptions-OperationalError/mysql_exceptions.png" alt></p>
+<a id="more"></a>
 <p>经查询发现报错的原因是使用的mysql8.0 以前用的是：tx_isolation 现在用是： transaction_isolation</p>
 <p>可通过以下办法解决:</p>
 <p>(1)升级 sqlalchemy 可以解决此问题  pip install -i <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a> –upgrade sqlalchemy –ignore-installed(亲测可用)</p>
@@ -593,11 +594,11 @@ gitalk.render('gitalk-container')
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
