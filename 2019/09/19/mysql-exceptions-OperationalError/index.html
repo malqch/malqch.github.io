@@ -6,22 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>相册 | 小不酒馆</title>
+  <title>解决(_mysql_exceptions.OperationalError) (1193, &#34;Unknown system variable &#39;tx_isolation&#39;&#34;) | 小不酒馆</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Photos     Videos    指弹_偏偏喜欢你            指弹_成都          指弹_Always with me">
-<meta name="keywords" content="博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="相册">
-<meta property="og:url" content="http://yoursite.com/photos/videos.html">
+  <meta name="description" content="最近在运行python项目是发现报如下错误:  经查询发现报错的原因是使用的mysql8.0 以前用的是：tx_isolation 现在用是： transaction_isolation 可通过以下办法解决: (1)升级 sqlalchemy 可以解决此问题  pip install -i https://pypi.tuna.tsinghua.edu.cn/simple –upgrade sqla">
+<meta name="keywords" content="mysql">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决(_mysql_exceptions.OperationalError) (1193, &quot;Unknown system variable &#39;tx_isolation&#39;&quot;)">
+<meta property="og:url" content="http://yoursite.com/2019/09/19/mysql-exceptions-OperationalError/index.html">
 <meta property="og:site_name" content="小不酒馆">
-<meta property="og:description" content="Photos     Videos    指弹_偏偏喜欢你            指弹_成都          指弹_Always with me">
+<meta property="og:description" content="最近在运行python项目是发现报如下错误:  经查询发现报错的原因是使用的mysql8.0 以前用的是：tx_isolation 现在用是： transaction_isolation 可通过以下办法解决: (1)升级 sqlalchemy 可以解决此问题  pip install -i https://pypi.tuna.tsinghua.edu.cn/simple –upgrade sqla">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-17T04:04:22.075Z">
+<meta property="og:image" content="http://yoursite.com/2019/09/19/mysql-exceptions-OperationalError/mysql_exceptions.png">
+<meta property="og:updated_time" content="2019-09-19T06:53:21.096Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="相册">
-<meta name="twitter:description" content="Photos     Videos    指弹_偏偏喜欢你            指弹_成都          指弹_Always with me">
+<meta name="twitter:title" content="解决(_mysql_exceptions.OperationalError) (1193, &quot;Unknown system variable &#39;tx_isolation&#39;&quot;)">
+<meta name="twitter:description" content="最近在运行python项目是发现报如下错误:  经查询发现报错的原因是使用的mysql8.0 以前用的是：tx_isolation 现在用是： transaction_isolation 可通过以下办法解决: (1)升级 sqlalchemy 可以解决此问题  pip install -i https://pypi.tuna.tsinghua.edu.cn/simple –upgrade sqla">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/19/mysql-exceptions-OperationalError/mysql_exceptions.png">
   
     <link rel="alternative" href="/atom.xml" title="小不酒馆" type="application/atom+xml">
   
@@ -218,17 +220,28 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-photos" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-mysql-exceptions-OperationalError" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      相册
+      解决(_mysql_exceptions.OperationalError) (1193, &#34;Unknown system variable &#39;tx_isolation&#39;&#34;)
     </h1>
   
 
+
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2019/09/19/mysql-exceptions-OperationalError/" class="archive-article-date">
+        <time datetime="2019-09-19T06:47:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-19</time>
+</a>
 
   
   
@@ -240,7 +253,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">20字</span>
+      <span class="post-count">94字</span>
     </span>
   </span>
 
@@ -260,43 +273,12 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <link rel="stylesheet" href="./ins.css">
-<div class="photos-btn-wrap">
-    <a class="photos-btn" href="/photos">Photos</a>
-    <a class="photos-btn active" href="/photos/videos.html">Videos</a>
-</div>
-
-
-<center><h1>指弹_偏偏喜欢你</h1></center>
-<hr>
-
-<center>
-<div class="video-container">
-<iframe height="80%" width="80%" src="http://player.youku.com/embed/XNDM2MjA2OTg2MA==" frameborder="0" allowfullscreen>
-</iframe>
-</div>
-</center>
-
-<hr>
-
-<center><h1>指弹_成都</h1></center>
-<hr>
-<center>
-<div class="video-container">
-<iframe height="80%" width="80%" src="http://player.youku.com/embed/XMzk0MDM5MzUxMg==" frameborder="0" allowfullscreen>
-</iframe>
-</div>
-</center>
-<hr>
-
-<center><h1>指弹_Always with me</h1></center>
-<hr>
-<center>
-<div class="video-container">
-<iframe height="80%" width="80%" src="http://player.youku.com/embed/XMjQ4MDQyNTQ0MA==" frameborder="0" allowfullscreen>
-</iframe>
-</div>
-</center>
+    <p>最近在运行python项目是发现报如下错误:</p>
+<p><img src="/2019/09/19/mysql-exceptions-OperationalError/mysql_exceptions.png" alt></p>
+<p>经查询发现报错的原因是使用的mysql8.0 以前用的是：tx_isolation 现在用是： transaction_isolation</p>
+<p>可通过以下办法解决:</p>
+<p>(1)升级 sqlalchemy 可以解决此问题  pip install -i <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a> –upgrade sqlalchemy –ignore-installed(亲测可用)</p>
+<p>(2)降低mysql 版本来解决这个问题</p>
 
     
 
@@ -340,6 +322,17 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -390,7 +383,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/photos/videos.html" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/19/mysql-exceptions-OperationalError/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -402,6 +395,16 @@
   </div>
 </article>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/08/long-distance-relationship/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">熬过异地恋，就是一生</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 <aside class="wrap-side-operation">
@@ -451,7 +454,7 @@ if(true){
     repo: 'malqch.github.io',
     owner: 'malqch',
     admin: ['malqch'],
-    id: 'Tue Sep 17 2019 12:04:22 GMT+0800',
+    id: 'Thu Sep 19 2019 14:47:00 GMT+0800',
     distractionFreeMode: 'true'
 })
 gitalk.render('gitalk-container') 
@@ -502,7 +505,7 @@ gitalk.render('gitalk-container')
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
