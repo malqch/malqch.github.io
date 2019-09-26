@@ -6,32 +6,46 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>安装Apache主程序报错:(OS 5)拒绝访问。:AH00369:Failed to open the Windows service manager, perhaps you forgot to log in as Adminstrator? | 小不酒馆</title>
+  <title>使用Git上传和更新本地项目到GitHub | 小不酒馆</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="解决办法：我下载的是zip格式的压缩包，解压完之后进入bin目录下执行httpd -k install，报错信息如下：">
-<meta name="keywords" content="apache">
+  <meta name="description" content="最近需要上传项目到GitHub，发现以前上传的一些命令都忘记了，在这里做个总结，方便以后查询，也给网友们做个参考。  一、下载安装Git软件(点这里) 下载之后一路next安装就可以了，安装完成后鼠标右击或者开始-&amp;gt;程序会出现，打开Git Bash，进入bash界面。">
+<meta name="keywords" content="Git,GitHub">
 <meta property="og:type" content="article">
-<meta property="og:title" content="安装Apache主程序报错:(OS 5)拒绝访问。:AH00369:Failed to open the Windows service manager, perhaps you forgot to log in as Adminstrator?">
-<meta property="og:url" content="http://yoursite.com/2019/09/20/apache-errors/index.html">
+<meta property="og:title" content="使用Git上传和更新本地项目到GitHub">
+<meta property="og:url" content="http://yoursite.com/2019/09/25/use-git/index.html">
 <meta property="og:site_name" content="小不酒馆">
-<meta property="og:description" content="解决办法：我下载的是zip格式的压缩包，解压完之后进入bin目录下执行httpd -k install，报错信息如下：">
+<meta property="og:description" content="最近需要上传项目到GitHub，发现以前上传的一些命令都忘记了，在这里做个总结，方便以后查询，也给网友们做个参考。  一、下载安装Git软件(点这里) 下载之后一路next安装就可以了，安装完成后鼠标右击或者开始-&amp;gt;程序会出现，打开Git Bash，进入bash界面。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/09/20/apache-errors/adminstrator.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/20/apache-errors/valid_directory.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/20/apache-errors/srvroot.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/20/apache-errors/srvroot_later.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/20/apache-errors/listen.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/20/apache-errors/reliably.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/20/apache-errors/server_name.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/20/apache-errors/warning.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/20/apache-errors/it_works.png">
-<meta property="og:updated_time" content="2019-09-20T06:38:40.029Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190925173424879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2019092517334473.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926094438879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926095314103.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926095837624.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926100244228.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2019092610070297.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926101325120.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926101600850.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926101740608.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926102008742.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926102716635.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926103113704.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926103509568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926104203291.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2019092610493142.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926105715891.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926112512446.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2019092611271411.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926113413553.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926113639314.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926113847507.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190926115603725.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-09-26T05:56:50.664Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="安装Apache主程序报错:(OS 5)拒绝访问。:AH00369:Failed to open the Windows service manager, perhaps you forgot to log in as Adminstrator?">
-<meta name="twitter:description" content="解决办法：我下载的是zip格式的压缩包，解压完之后进入bin目录下执行httpd -k install，报错信息如下：">
-<meta name="twitter:image" content="http://yoursite.com/2019/09/20/apache-errors/adminstrator.png">
+<meta name="twitter:title" content="使用Git上传和更新本地项目到GitHub">
+<meta name="twitter:description" content="最近需要上传项目到GitHub，发现以前上传的一些命令都忘记了，在这里做个总结，方便以后查询，也给网友们做个参考。  一、下载安装Git软件(点这里) 下载之后一路next安装就可以了，安装完成后鼠标右击或者开始-&amp;gt;程序会出现，打开Git Bash，进入bash界面。">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190925173424879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="小不酒馆" type="application/atom+xml">
   
@@ -228,14 +242,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-apache-errors" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-use-git" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      安装Apache主程序报错:(OS 5)拒绝访问。:AH00369:Failed to open the Windows service manager, perhaps you forgot to log in as Adminstrator?
+      使用Git上传和更新本地项目到GitHub
     </h1>
   
 
@@ -247,8 +261,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2019/09/20/apache-errors/" class="archive-article-date">
-        <time datetime="2019-09-20T06:32:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-20</time>
+<a href="/2019/09/25/use-git/" class="archive-article-date">
+        <time datetime="2019-09-25T09:22:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
 </a>
 
   
@@ -261,7 +275,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">306字</span>
+      <span class="post-count">1.4k字</span>
     </span>
   </span>
 
@@ -270,7 +284,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">5分</span>
     </span>
   </span>
 </div>
@@ -281,30 +295,30 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h3><p>我下载的是zip格式的压缩包，解压完之后进入bin目录下执行httpd -k install，报错信息如下：</p>
-<p><img src="/2019/09/20/apache-errors/adminstrator.png" alt></p>
+    <p>最近需要上传项目到GitHub，发现以前上传的一些命令都忘记了，在这里做个总结，方便以后查询，也给网友们做个参考。</p>
+<p> <strong>一、下载安装Git软件(<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">点这里</a>)</strong><br> 下载之后一路next安装就可以了，安装完成后鼠标右击或者开始-&gt;程序会出现，打开Git Bash，进入bash界面。</p>
 <a id="more"></a>
-<p>根据错误提示，以管理员身份运行cmd，重新安装就可以了。</p>
-<p><strong>正常安装完毕会出现提示：Errors reported here must be corrected before the service can be started.</strong></p>
-<p>若该句话后面有错误信息，表示服务安装失败，需改正错误重新安装。若没有，则安装成功。</p>
-<p>如果出现以下错误：</p>
-<p><img src="/2019/09/20/apache-errors/valid_directory.png" alt></p>
-<p>需要修改httpd.conf里面配置的ServerRoot路径跟实际路径一致，此时我们打开conf文件夹，找到httpd.conf，修改ServerRoot的路径：</p>
-<p>修改前：</p>
-<p><img src="/2019/09/20/apache-errors/srvroot.png" alt></p>
-<p>修改后：</p>
-<p><img src="/2019/09/20/apache-errors/srvroot_later.png" alt></p>
-<p>为防止80端口与其它软件冲突，无法启动服务，将端口改为88：</p>
-<p><img src="/2019/09/20/apache-errors/listen.png" alt></p>
-<p>然后执行命令：httpd -k uninstall卸载，再次执行安装命令，如果出现以下错误：</p>
-<p><img src="/2019/09/20/apache-errors/reliably.png" alt></p>
-<p>打开httpd.conf文件，在里面加上ServerName localhost:80这句话：</p>
-<p><img src="/2019/09/20/apache-errors/server_name.png" alt></p>
-<p>执行卸载httpd -k uninstall，后再次执行安装命令httpd -k install，出现如下图，表示安装成功：</p>
-<p><img src="/2019/09/20/apache-errors/warning.png" alt></p>
-<p><strong>启动Apache命令: httpd -k start</strong></p>
-<p>此时在浏览器输入<a href="http://localhost:88测试，出现如下图所示，表示已经启动！" target="_blank" rel="noopener">http://localhost:88测试，出现如下图所示，表示已经启动！</a></p>
-<p><img src="/2019/09/20/apache-errors/it_works.png" alt></p>
+
+<p><img src="https://img-blog.csdnimg.cn/20190925173424879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/2019092517334473.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>二、邮箱注册(不注册上传文件会一直提示tell who are you)</strong></p>
+<blockquote>
+<p>在进行此步骤之前，确定已经在GitHub注册账号，并牢记用户名与密码，如果还没有注册，<a href="https://github.com/join" target="_blank" rel="noopener">点击注册</a>。</p>
+</blockquote>
+<p>打开git bash界面，输入如下内容即可完成注册：</p>
+<p><code>git config --global user.name &quot;user.name&quot;</code><br>（注：双引号中需要你的用户名，这个可以随便输入，比如“zhangsan”）</p>
+<p><code>git config --global user.email &quot;yourmail@youremail.com.cn&quot;</code><br>(注： 双引号中需要输入你的有效邮箱，比如“<a href="mailto:12131312@qq.com" target="_blank" rel="noopener">12131312@qq.com</a>”)<br><img src="https://img-blog.csdnimg.cn/20190926094438879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br><strong>三、设置密匙ssh keys(如果之前设置过可忽略此步)</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"你的邮箱名"</span></span><br><span class="line"></span><br><span class="line">指定目录: C:\deskbook\（说明：若在此处不输入路径，而直接按回车，则ssh keys生成后存放的路径为C:\User\.ssh）</span><br><span class="line"></span><br><span class="line">输入密码: <span class="number">123456</span></span><br><span class="line"></span><br><span class="line">确认密码: <span class="number">123456</span></span><br></pre></td></tr></table></figure>
+
+<p>之后即可在C:\deskbook\文件夹中生成ssh keys。其中包括两个文件rd_rsa和id_rsa.pub。<br><img src="https://img-blog.csdnimg.cn/20190926095314103.png" alt><br>然后找到rd_rsa和id_rsa.pub所在目录打开idb_rsa.pub（可以用Notepad++打开)，登录自己的GitHub账号，找到<a href="https://github.com/settings/profile" target="_blank" rel="noopener">Settings</a>,<br><img src="https://img-blog.csdnimg.cn/20190926095837624.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br>进入Settings后,点击SSH and GPG keys,然后再点击右上角添加新密钥按钮New SSH key,<br><img src="https://img-blog.csdnimg.cn/20190926100244228.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br>之后，将idb_rsa.pub里的内容拷贝到Key内，Title内容可随意填，点击确定Add SSH key即可。<br><img src="https://img-blog.csdnimg.cn/2019092610070297.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br>至此密钥添加就完成了，下次无需添加可直接使用。</p>
+<p><strong>四、上传本地文件到Git</strong><br>我们需要先创建一个本地的版本库（其实就是一个文件夹）。可以直接右击新建文件夹，也可以右击打开Git bash命令行窗口通过命令来创建。</p>
+<p>现在我通过命令行在桌面新建一个test文件夹（你也可以在其他任何地方创建这个文件夹），并且进入这个文件夹：<br><img src="https://img-blog.csdnimg.cn/20190926101325120.png" alt><br>这时桌面上就会出现一个文件夹，你可以将你的项目代码拷贝进来：<br><img src="https://img-blog.csdnimg.cn/20190926101600850.png" alt><br>然后通过命令git init把这个文件夹变成Git可管理的仓库：<br><img src="https://img-blog.csdnimg.cn/20190926101740608.png" alt><br>这时你会发现test文件里多了个.git文件夹，它是Git用来跟踪和管理版本库的。如果你看不到，是因为它默认是隐藏文件，你需要设置一下让隐藏文件可见。<br><img src="https://img-blog.csdnimg.cn/20190926102008742.png" alt><br>这时候你可以通过git status来查看你当前的状态，然后通过git add把项目添加到仓库（或git add .把该目录下的所有文件添加到仓库，注意点是用空格隔开的）。在这个过程中你其实可以一直使用git status来查看你当前的状态：<br><img src="https://img-blog.csdnimg.cn/20190926102716635.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br>然后我们执行git add .命令把刚才复制过来的项目全部添加到仓库上。<br><img src="https://img-blog.csdnimg.cn/20190926103113704.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br>最后，用git commit -m “项目描述信息” 把项目提交到Git仓库:<br><img src="https://img-blog.csdnimg.cn/20190926103509568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br><strong>五、GitHub上建仓库并和本地Git仓库进行关联</strong><br>登录<a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>，直接点<a href="https://github.com/new" target="_blank" rel="noopener">New repository</a>来创建仓库，比如我创建了一个tornado_web（名字可以自己随便起）的仓库：<br><img src="https://img-blog.csdnimg.cn/20190926104203291.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2019092610493142.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br>创建好之后，进入仓库，复制创建好的仓库地址：<br><img src="https://img-blog.csdnimg.cn/20190926105715891.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br>之后就可以在Github上将创建好仓库和本地Git仓库进行关联了，在本地test仓库的命令行输入：<br><img src="https://img-blog.csdnimg.cn/20190926112512446.png" alt><br>注意origin后面加的是你Github上创建好的仓库的地址（就是刚刚上图复制的地址）：<br><img src="https://img-blog.csdnimg.cn/2019092611271411.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br><strong>六、推送到GitHub</strong></p>
+<p>关联好之后我们就可以把本地库的所有内容推送到远程仓库（也就是Github）上了，通过执行：<code>git push -u origin master</code>命令：<br><img src="https://img-blog.csdnimg.cn/20190926113413553.png" alt><br>由于新建的远程仓库是空的，所以要加上-u这个参数，等远程仓库里面有了内容之后，下次再从本地库上传内容的时候只需执行<code>git push origin master</code>命令就可以了。</p>
+<p>上传项目的过程可能有点慢，完成之后是这样的：<br><img src="https://img-blog.csdnimg.cn/20190926113639314.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br>这时候你再重新刷新你的Github页面进入刚才新建的那个仓库里面就会发现项目已经成功上传了：<br><img src="https://img-blog.csdnimg.cn/20190926113847507.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br> 至此就完成了将本地项目上传到Github的整个过程。</p>
+<p><strong>七、更新本地项目到GitHub</strong></p>
+<p>更新项目，先添加文件，再提交，最后在推送，更新前最好用git pull origin master更新一下你的本地项目，因为可能有别人做了更新，导致冲突：<br><img src="https://img-blog.csdnimg.cn/20190926115603725.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODY3Mw==,size_16,color_FFFFFF,t_70" alt><br>总结一下：把本地项目上传到Github只需要进行下面几步</p>
+<p>　　注意：如果中途弹出输入框让你填写用户名和密码，只需把GitHub的账号和密码填写上即可。</p>
+<blockquote>
+<p>1、在本地创建一个版本库（即文件夹），通过git init把它变成Git仓库；   2、把项目复制到这个文件夹里面，再通过git add<br>.把项目添加到仓库；   3、再通过git commit -m “注释内容”把项目提交到仓库；<br>4、在Github上设置好SSH密钥后，新建一个远程仓库，通过git remote add origin<br><a href="https://github.com/malqch/tornado_web.git将本地仓库和远程仓库进行关联；" target="_blank" rel="noopener">https://github.com/malqch/tornado_web.git将本地仓库和远程仓库进行关联；</a>   5、最后通过git<br>push -u origin master把本地仓库的项目推送到远程仓库（也就是Github）上。</p>
+</blockquote>
 
     
 
@@ -353,7 +367,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">apache</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">GitHub</a>
         		</li>
       		
 		</ul>
@@ -409,7 +427,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/20/apache-errors/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/25/use-git/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -424,18 +442,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2019/09/25/use-git/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          使用Git上传和更新本地项目到GitHub
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/19/mysql-exceptions-OperationalError/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">解决(_mysql_exceptions.OperationalError) (1193, &#34;Unknown system variable &#39;tx_isolation&#39;&#34;)</div>
+    <a href="/2019/09/20/apache-errors/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">安装Apache主程序报错:(OS 5)拒绝访问。:AH00369:Failed to open the Windows service manager, perhaps you forgot to log in as Adminstrator?</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -489,7 +498,7 @@ if(true){
     repo: 'malqch.github.io',
     owner: 'malqch',
     admin: ['malqch'],
-    id: 'Fri Sep 20 2019 14:32:32 GMT+0800',
+    id: 'Wed Sep 25 2019 17:22:55 GMT+0800',
     distractionFreeMode: 'true'
 })
 gitalk.render('gitalk-container') 
